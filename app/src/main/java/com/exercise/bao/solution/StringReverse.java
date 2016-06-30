@@ -1,8 +1,10 @@
 package com.exercise.bao.solution;
 
 /**
+ * Write a function that takes a string as input and returns the string reversed.
+ * Example:
+ * Given s = "hello", return "olleh".
  * Created by Administrator on 2016/6/30.
- * 用来反转字符串
  */
 public class StringReverse {
     /**
@@ -11,7 +13,7 @@ public class StringReverse {
      * @param speed 默认为最快速，0：最慢，1较快
      * @return
      */
-    public String stringReverse(String s, int speed) {
+    public static String stringReverse(String s, int speed) {
         switch (speed) {
             case 0:
                 return stringReverseSlow(s);
@@ -27,7 +29,7 @@ public class StringReverse {
      * @param s
      * @return
      */
-    public String stringReverseSlow(String s) {
+    public static String stringReverseSlow(String s) {
         String newS = "";
         for (int i = 0; i < s.length(); i++) {
             newS += s.charAt(s.length() - 1 - i);
@@ -40,7 +42,7 @@ public class StringReverse {
      * @param s
      * @return
      */
-    public String stringReverseFaster(String s) {
+    public static String stringReverseFaster(String s) {
         return new StringBuffer(s).reverse().toString();
     }
 
@@ -49,7 +51,7 @@ public class StringReverse {
      * @param s
      * @return
      */
-    public String stringReverseFastest(String s) {
+    public static String stringReverseFastest(String s) {
         char[] word = s.toCharArray();
         int i = 0;
         int j = s.length() - 1;
