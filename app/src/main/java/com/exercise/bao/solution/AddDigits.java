@@ -22,4 +22,13 @@ public class AddDigits {
 
         return n>9?addDigits(n):n;
     }
+
+    /**
+     * 时间复杂度为O(1)
+     * @param num
+     * @return
+     */
+    public static int addDigitsO1(int num) {
+        return num==0?0:(num%9==0?9:(num%9));
+    }
 }
