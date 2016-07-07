@@ -2,7 +2,8 @@ package com.exercise.bao.util;
 
 /**
  * 字符串工具集合
- * Created by Administrator on 2016/6/30.
+ *
+ * Created by CrazyBun on 2016/6/30.
  */
 public class StringUtil {
     /**

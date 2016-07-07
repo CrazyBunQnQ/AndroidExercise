@@ -4,7 +4,8 @@ package com.exercise.bao.solution;
  * Write a function that takes a string as input and returns the string reversed.
  * Example:
  * Given s = "hello", return "olleh".
- * Created by Administrator on 2016/6/30.
+ *
+ * Created by CrazyBun on 2016/6/30.
  */
 public class StringReverse {
     /**

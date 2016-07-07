@@ -18,7 +18,8 @@ import java.util.Queue;
  *   7     2
  *  / \   / \
  * 9   6 3   1
- * Created by Administrator on 2016/7/7.
+ *
+ * Created by CrazyBun on 2016/7/7.
  */
 public class InvertBinaryTree {
     /**

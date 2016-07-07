@@ -20,7 +20,7 @@ import java.util.Stack;
  *     BinaryTreeNode(int x) { val = x; }
  * }
  *
- * Created by Administrator on 2016/7/7.
+ * Created by CrazyBun on 2016/7/7.
  */
 public class MaximumDepthOfBinaryTree {
     /**

@@ -1,7 +1,9 @@
 package com.exercise.bao.util;
 
 /**
- * Created by Administrator on 2016/6/30.
+ * 时间工具集合
+ *
+ * Created by CrazyBun on 2016/6/30.
  */
 public class TimeUtil {
     public static long currentTime;
