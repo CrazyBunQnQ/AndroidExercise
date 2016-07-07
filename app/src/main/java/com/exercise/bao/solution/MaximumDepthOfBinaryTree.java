@@ -1,5 +1,7 @@
 package com.exercise.bao.solution;
 
+import com.exercise.bao.common.BinaryTreeNode;
+
 import java.util.Deque;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -11,38 +13,29 @@ import java.util.Stack;
  * The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
  *
  * Definition for a binary tree node.
- * public class TreeNode {
+ * public class BinaryTreeNode {
  *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
+ *     BinaryTreeNode left;
+ *     BinaryTreeNode right;
+ *     BinaryTreeNode(int x) { val = x; }
  * }
  *
  * Created by Administrator on 2016/7/7.
  */
 public class MaximumDepthOfBinaryTree {
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) {
-            val = x;
-        }
-    }
-
     /**
      * 超慢
      * @param root
      * @return
      */
-    public int maxDepth1(TreeNode root) {
+    public int maxDepth1(BinaryTreeNode root) {
         if (root == null) {
             return 0;
         }
-        Map<TreeNode, Integer> depthMap = new HashMap<>();
+        Map<BinaryTreeNode, Integer> depthMap = new HashMap<>();
         depthMap.put(root, 1);
         int maxDepth = 1;
-        Stack<TreeNode> stack = new Stack<>();
+        Stack<BinaryTreeNode> stack = new Stack<>();
         stack.push(root);
         while (!stack.isEmpty()) {
             root = stack.pop();
@@ -66,11 +59,11 @@ public class MaximumDepthOfBinaryTree {
      * @param root
      * @return
      */
-    public int maxDepth2(TreeNode root) {
+    public int maxDepth2(BinaryTreeNode root) {
         if (root == null)
             return 0;
 
-        Deque<TreeNode> stack = new LinkedList<TreeNode>();
+        Deque<BinaryTreeNode> stack = new LinkedList<BinaryTreeNode>();
 
         stack.push(root);
         int count = 0;
@@ -78,7 +71,7 @@ public class MaximumDepthOfBinaryTree {
         while (!stack.isEmpty()) {
             int size = stack.size();
             while (size-- > 0) {
-                TreeNode cur = stack.pop();
+                BinaryTreeNode cur = stack.pop();
                 if (cur.left != null)
                     stack.addLast(cur.left);
                 if (cur.right != null)
@@ -95,7 +88,7 @@ public class MaximumDepthOfBinaryTree {
      * @param root
      * @return
      */
-    public int maxDepth3(TreeNode root) {
+    public int maxDepth3(BinaryTreeNode root) {
         if (root == null)  return 0;
         int leftDepth = maxDepth(root.left);
         int rightDepth = maxDepth(root.right);
@@ -107,7 +100,7 @@ public class MaximumDepthOfBinaryTree {
      * @param root
      * @return
      */
-    public int maxDepth(TreeNode root) {
+    public int maxDepth(BinaryTreeNode root) {
 //        if(root==null){
 //            return 0;
 //        }
