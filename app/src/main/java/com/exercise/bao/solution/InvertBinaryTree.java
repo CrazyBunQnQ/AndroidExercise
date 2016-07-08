@@ -27,7 +27,7 @@ public class InvertBinaryTree {
      * @param root
      * @return
      */
-    public BinaryTreeNode invertTree(BinaryTreeNode root) {
+    public static BinaryTreeNode invertTree(BinaryTreeNode root) {
         if (root == null) {
             return root;
         }
@@ -43,7 +43,7 @@ public class InvertBinaryTree {
      * @param root
      * @return
      */
-    public BinaryTreeNode invertTree2(BinaryTreeNode root) {
+    public static BinaryTreeNode invertTree2(BinaryTreeNode root) {
         Queue<BinaryTreeNode> queue = new LinkedList<>();
         queue.add(root);
         while (!queue.isEmpty()) {

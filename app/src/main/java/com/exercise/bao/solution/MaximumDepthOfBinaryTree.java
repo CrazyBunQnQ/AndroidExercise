@@ -28,7 +28,7 @@ public class MaximumDepthOfBinaryTree {
      * @param root
      * @return
      */
-    public int maxDepth1(BinaryTreeNode root) {
+    public static int maxDepth1(BinaryTreeNode root) {
         if (root == null) {
             return 0;
         }
@@ -59,7 +59,7 @@ public class MaximumDepthOfBinaryTree {
      * @param root
      * @return
      */
-    public int maxDepth2(BinaryTreeNode root) {
+    public static int maxDepth2(BinaryTreeNode root) {
         if (root == null)
             return 0;
 
@@ -88,7 +88,7 @@ public class MaximumDepthOfBinaryTree {
      * @param root
      * @return
      */
-    public int maxDepth3(BinaryTreeNode root) {
+    public static int maxDepth3(BinaryTreeNode root) {
         if (root == null)  return 0;
         int leftDepth = maxDepth(root.left);
         int rightDepth = maxDepth(root.right);
@@ -100,7 +100,7 @@ public class MaximumDepthOfBinaryTree {
      * @param root
      * @return
      */
-    public int maxDepth(BinaryTreeNode root) {
+    public static int maxDepth(BinaryTreeNode root) {
 //        if(root==null){
 //            return 0;
 //        }

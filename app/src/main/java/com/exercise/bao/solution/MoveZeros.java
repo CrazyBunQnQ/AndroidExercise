@@ -42,7 +42,7 @@ public class MoveZeros {
      * defeat 88%
      * @param nums
      */
-    public void moveZeroes0ms(int[] nums){
+    public static void moveZeroes0ms(int[] nums){
         int index=0;
         for (int i=0;i<nums.length;i++){
             if (nums[i]!=0) nums[index++]=nums[i];
