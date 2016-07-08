@@ -11,9 +11,16 @@ package com.exercise.bao.solution;
  * Created by CrazyBun on 2016/7/7.
  */
 public class MoveZeros {
+    /**
+     * by myself! defeat 24%
+     * @param nums
+     */
     public static void moveZeroes(int[] nums) {
         int numOfZeros = 0;
         int length = nums.length;
+        if (length < 2) {
+            return;
+        }
         for (int i = 0; i < length; i++) {
             if (i + numOfZeros == length) {
                 for (int j = 0; j < numOfZeros; j++) {
@@ -22,12 +29,26 @@ public class MoveZeros {
                 return;
             }
             while (nums[i + numOfZeros] == 0) {
-                numOfZeros = length<2? numOfZeros: numOfZeros+1;
                 if (i + numOfZeros >= length - 1) {
                     break;
                 }
+                numOfZeros = numOfZeros+1;
             }
-            nums[i] = i + numOfZeros >= length? nums[i]: nums[i + numOfZeros];
+            nums[i] = nums[i + numOfZeros];
+        }
+    }
+
+    /**
+     * defeat 88%
+     * @param nums
+     */
+    public void moveZeroes0ms(int[] nums){
+        int index=0;
+        for (int i=0;i<nums.length;i++){
+            if (nums[i]!=0) nums[index++]=nums[i];
+        }
+        while(index<nums.length){
+            nums[index++]=0;
         }
     }
 }
