@@ -1,4 +1,4 @@
-package com.exercise.bao.util;
+package com.exercise.bao.utils;
 
 /**
  * 时间工具集合

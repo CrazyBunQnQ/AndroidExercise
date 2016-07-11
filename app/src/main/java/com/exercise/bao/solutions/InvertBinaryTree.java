@@ -1,4 +1,4 @@
-package com.exercise.bao.solution;
+package com.exercise.bao.solutions;
 
 import com.exercise.bao.common.BinaryTreeNode;
 

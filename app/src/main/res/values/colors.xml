@@ -3,4 +3,14 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="actionbar_bg">#083FF4</color>
+    <color name="white">#ffffffff</color>
+    <color name="hall_bg">#f0f0f0</color>
+    <color name="end_color">#535353</color>
+    <color name="blue">#083ff4</color>
+    <color name="grey_interval_50">#7F000000</color>
+    <color name="grey_interval_30">#4D000000</color>
+    <color name="grey_interval_15">#26000000</color>
+    <color name="grey_interval_10">#1A000000</color>
 </resources>

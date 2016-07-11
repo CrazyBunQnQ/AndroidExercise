@@ -1,4 +1,4 @@
-package com.exercise.bao.util;
+package com.exercise.bao.utils;
 
 /**
  * 字符串工具集合

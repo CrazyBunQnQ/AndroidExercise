@@ -1,4 +1,4 @@
-package com.exercise.bao.solution;
+package com.exercise.bao.solutions;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -75,21 +75,21 @@ public class IntersectionOfTwoArrays {
      * @param nums2
      * @return
      */
-    public int[] intersection4ms(int[] nums1, int[] nums2)
+    public static int[] intersection4ms(int[] nums1, int[] nums2)
     {
         qsort(nums1, 0, nums1.length-1);
         qsort(nums2, 0, nums2.length-1);
         return merge(nums1, nums2);
     }
 
-    private void swap(int[] arr, int left, int right)
+    private static void swap(int[] arr, int left, int right)
     {
         int temp = arr[left];
         arr[left] = arr[right];
         arr[right] = temp;
     }
     // my own quick sort
-    private void qsort(int[] arr, int left, int right)
+    private static void qsort(int[] arr, int left, int right)
     {
         int start = left;
         int end = right;
@@ -120,7 +120,7 @@ public class IntersectionOfTwoArrays {
     }
 
     // use merge to delete dumplicate
-    private int[] merge(int[] nums1, int[] nums2)
+    private static int[] merge(int[] nums1, int[] nums2)
     {
         int reserveLen = nums1.length + nums2.length;
         int[] ret = new int[reserveLen];

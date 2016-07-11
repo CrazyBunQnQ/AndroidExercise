@@ -1,4 +1,4 @@
-package com.exercise.bao.solution;
+package com.exercise.bao.solutions;
 
 /**
  * Write a function that takes a string as input and returns the string reversed.

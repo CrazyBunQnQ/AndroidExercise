@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        layout="@layout/include_interval_grey_15" />
+    
+    <LinearLayout 
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:orientation="vertical" >
+	
+	        <Button
+	            android:id="@+id/hallButton"
+	            android:layout_width="29dp"
+	            android:layout_height="25dp"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginTop="8dp"
+	            android:background="@drawable/btn_hall"
+	            android:clickable="true" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginBottom="5dp"
+	            android:tag="tv"
+	            android:text="12314" >
+	        </TextView>
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:orientation="vertical" >
+	
+	        <Button
+	            android:id="@+id/groupButton"
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginTop="8dp"
+	            android:background="@drawable/btn_work"
+	            android:clickable="true" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginBottom="5dp"
+	            android:tag="tv"
+	            android:text="231415">
+	        </TextView>
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:orientation="vertical" >
+	
+	        <Button
+	            android:id="@+id/mineButton"
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginTop="8dp"
+	            android:background="@drawable/btn_personal"
+	            android:clickable="true" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginBottom="5dp"
+	            android:tag="tv"
+	            android:text="23125152">
+	        </TextView>
+	    </LinearLayout>
+	</LinearLayout>
+</LinearLayout>

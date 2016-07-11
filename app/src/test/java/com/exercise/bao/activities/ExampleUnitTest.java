@@ -1,4 +1,4 @@
-package com.exercise.bao.leetcode;
+package com.exercise.bao.activities;
 
 import org.junit.Test;
 

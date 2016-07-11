@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hall_bg"
+    android:orientation="vertical">
+    
+    <include
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/include_actionbar">
+    </include>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:paddingBottom="20dp"
+        	android:orientation="vertical">
+		    <RelativeLayout
+		        android:id="@+id/shop_info"
+		        android:layout_width="match_parent"
+		        android:layout_height="110dp"
+		        android:orientation="horizontal"
+		        android:background="@color/white">
+		        
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="80dp"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="120dp"
+		            android:background="#44ffffff"
+		            android:baselineAligned="false"
+		            android:orientation="vertical" >
+
+		            <TextView
+		                android:id="@+id/user_name"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="10dp"
+		                android:layout_weight="1"
+		                android:text="55555"
+		                android:textSize="18sp"
+		                android:textStyle="bold" />
+
+		            <TextView
+		                android:id="@+id/user_num"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginBottom="10dp"
+		                android:layout_weight="1"
+		                android:text="66666"
+		                android:textSize="18sp" />
+		        </LinearLayout>
+		        
+		        <ImageView
+		            android:layout_width="20sp"
+		            android:layout_height="20sp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="13dp"
+		            android:contentDescription="@string/app_name"
+		            android:src="@drawable/btn_list_arrow" />
+
+		        <ImageView
+		            android:id="@+id/my_avatar"
+	                android:layout_width="80dp"
+	                android:layout_height="80dp"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="10dp"
+	                android:contentDescription="@string/app_name"
+	                android:src="@drawable/bg_user_0"/>
+		        
+		        <ImageView
+		            android:id="@+id/user_state"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_alignParentBottom="true"
+		            android:layout_marginBottom="15dp"
+		            android:layout_marginLeft="65dp"
+		            android:contentDescription="@string/app_name" />
+
+		    </RelativeLayout>
+		    
+		    <include
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        layout="@layout/include_interval_grey_15" />
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:background="@color/white"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+
+		        <TextView
+		            android:id="@+id/user_time"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dp"
+		            android:layout_weight="1"
+		            android:gravity="center"
+		            android:textColor="@color/end_color"
+		            android:textSize="14sp" />
+
+		        <include
+		            android:layout_width="1dp"
+		            android:layout_height="match_parent"
+		            layout="@layout/include_interval_grey_15" />
+
+		        <TextView
+		            android:id="@+id/user_order"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dp"
+		            android:layout_weight="1"
+		            android:gravity="center"
+		            android:textColor="@color/end_color"
+		            android:textSize="14sp" />
+		    </LinearLayout>
+		        
+		    <include
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        layout="@layout/include_interval_grey_15" />
+		    
+		    <TextView 
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:layout_marginLeft="10dp"
+		        android:gravity="center_vertical"
+		        android:text="77777"
+		        android:textSize="18sp"/>
+		    <include
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        layout="@layout/include_interval_grey_15" />
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="15dp"
+		        android:background="@color/white"
+		        android:orientation="vertical">
+		        <LinearLayout
+		            android:id="@+id/order_ll"
+		            android:tag="0"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:paddingRight="15dp"
+		            android:gravity="center_vertical"
+		            android:orientation="horizontal">
+		            <ImageView 
+		                android:layout_width="20sp"
+		                android:layout_height="20sp"
+		                android:contentDescription="@string/app_name"
+		                android:src="@drawable/bg_hall_order"/>
+		            
+		            <TextView 
+				        android:layout_width="wrap_content"
+				        android:layout_height="50dp"
+				        android:layout_marginLeft="10dp"
+				        android:gravity="center_vertical"
+				        android:text="8888"
+				        android:textSize="16sp"/>
+		            
+		            <TextView 
+		                android:id="@+id/order_num_tv"
+				        android:layout_width="0dp"
+				        android:layout_height="50dp"
+				        android:layout_weight="1"
+				        android:layout_marginLeft="5dp"
+				        android:gravity="center_vertical"
+				        android:text="999999"
+				        android:textSize="16sp"/>
+		            
+		            <ImageView 
+		                android:layout_width="15sp"
+		                android:layout_height="15sp"
+		                android:contentDescription="@string/app_name"
+		                android:src="@drawable/btn_list_arrow"/>
+		        </LinearLayout>
+		        <!-- <include
+			        android:layout_width="match_parent"
+			        android:layout_height="1dp"
+			        android:layout_marginLeft="20dp"
+			        layout="@layout/include_interval_grey_10" />
+		        <LinearLayout
+		            android:id="@+id/exclusive_ll"
+		            android:tag="1"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:paddingRight="15dp"
+		            android:gravity="center_vertical"
+		            android:orientation="horizontal">
+		            <ImageView 
+		                android:layout_width="20sp"
+		                android:layout_height="20sp"
+		                android:contentDescription="@string/app_name"
+		                android:src="@drawable/bg_hall_exclusive"/>
+		            
+		            <TextView 
+				        android:layout_width="wrap_content"
+				        android:layout_height="50dp"
+				        android:layout_marginLeft="10dp"
+				        android:gravity="center_vertical"
+				        android:text="@string/exclusive_order"
+				        android:textSize="16sp"/>
+		            
+		            <TextView 
+		                android:id="@+id/exclusive_num_tv"
+				        android:layout_width="0dp"
+				        android:layout_height="50dp"
+				        android:layout_weight="1"
+				        android:layout_marginLeft="5dp"
+				        android:gravity="center_vertical"
+				        android:text="@string/zero_num_txt"
+				        android:textSize="16sp"/>
+		            
+		            <ImageView 
+		                android:layout_width="15sp"
+		                android:layout_height="15sp"
+		                android:contentDescription="@string/app_name"
+		                android:src="@drawable/btn_list_arrow"/>
+		        </LinearLayout> -->
+		        <include
+			        android:layout_width="match_parent"
+			        android:layout_height="1dp"
+			        android:layout_marginLeft="20dp"
+			        layout="@layout/include_interval_grey_10" />
+		        <LinearLayout
+		            android:id="@+id/print_ll"
+		            android:tag="1"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:paddingRight="15dp"
+		            android:gravity="center_vertical"
+		            android:orientation="horizontal">
+   		            <ImageView 
+		                android:layout_width="20sp"
+		                android:layout_height="20sp"
+		                android:contentDescription="@string/app_name"
+		                android:src="@drawable/bg_hall_print"/>
+		            <TextView 
+				        android:layout_width="wrap_content"
+				        android:layout_height="50dp"
+				        android:layout_marginLeft="10dp"
+				        android:gravity="center_vertical"
+				        android:text="10101010"
+				        android:textSize="16sp"/>
+		            
+		            <TextView
+		                android:id="@+id/ticket_num_tv" 
+				        android:layout_width="0dp"
+				        android:layout_height="50dp"
+				        android:layout_weight="1"
+				        android:layout_marginLeft="5dp"
+				        android:gravity="center_vertical"
+				        android:text="2121212t"
+				        android:textSize="16sp"/>
+		            
+		            <ImageView 
+		                android:layout_width="15sp"
+		                android:layout_height="15sp"
+		                android:contentDescription="@string/app_name"
+		                android:src="@drawable/btn_list_arrow"/>
+		        </LinearLayout>
+		        <include
+			        android:layout_width="match_parent"
+			        android:layout_height="1dp"
+			        android:layout_marginLeft="20dp"
+			        layout="@layout/include_interval_grey_10" />
+		        <LinearLayout
+		            android:id="@+id/prize_ll"
+		            android:tag="2"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:paddingRight="15dp"
+		            android:gravity="center_vertical"
+		            android:orientation="horizontal">
+		            <ImageView 
+		                android:layout_width="20sp"
+		                android:layout_height="20sp"
+		                android:contentDescription="@string/app_name"
+		                android:src="@drawable/bg_hall_prize"/>
+		            <TextView 
+				        android:layout_width="wrap_content"
+				        android:layout_height="50dp"
+				        android:layout_marginLeft="10dp"
+				        android:gravity="center_vertical"
+				        android:text="123145"
+				        android:textSize="16sp"/>
+		            
+		            <TextView 
+		                android:id="@+id/prize_num_tv"
+				        android:layout_width="0dp"
+				        android:layout_height="50dp"
+				        android:layout_weight="1"
+				        android:layout_marginLeft="5dp"
+				        android:gravity="center_vertical"
+				        android:text="31321331"
+				        android:textSize="16sp"/>
+		            
+		            <ImageView 
+		                android:layout_width="15sp"
+		                android:layout_height="15sp"
+		                android:contentDescription="@string/app_name"
+		                android:src="@drawable/btn_list_arrow"/>
+		        </LinearLayout>
+		    </LinearLayout>
+		    
+		    <include
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        layout="@layout/include_interval_grey_15" />
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="30dp"
+			        android:layout_marginLeft="10dp"
+			        android:gravity="center_vertical"
+			        android:text="3333"
+			        android:textSize="18sp"/>
+			    
+			    <TextView 
+			        android:id="@+id/notificationCount"
+			        android:layout_width="wrap_content"
+			        android:layout_height="30dp"
+			        android:gravity="center_vertical"
+			        android:textSize="18sp"/>
+		    </LinearLayout>
+		    
+		    <include
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        layout="@layout/include_interval_grey_15" />
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="15dp"
+		        android:paddingRight="15dp"
+		        android:background="@color/white"
+		        android:orientation="vertical">
+		        <LinearLayout
+		            android:id="@+id/noneLayout"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:gravity="center_vertical"
+		            android:orientation="horizontal"
+		            android:visibility="gone" >
+		            <ImageView 
+		                android:layout_width="20sp"
+		                android:layout_height="20sp"
+		                android:contentDescription="@string/app_name"
+		                android:src="@drawable/bg_no_msg"/>
+		            
+		            <TextView 
+				        android:layout_width="match_parent"
+				        android:layout_height="50dp"
+				        android:layout_marginLeft="10dp"
+				        android:gravity="center_vertical"
+				        android:text="22222"
+				        android:textSize="16sp"/>
+		        </LinearLayout>
+		    </LinearLayout>
+		    
+		    <ListView
+	            android:id="@+id/todayListView"
+	            android:background="@color/white"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:cacheColorHint="#00000000"
+	            android:visibility="gone" />
+		    
+		    <include
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        layout="@layout/include_interval_grey_15" />
+
+		    <LinearLayout
+		        android:id="@+id/goToNotificationLL"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/white"
+		        android:orientation="vertical"
+		        android:visibility="gone" >
+
+		        <TextView
+		            android:id="@+id/goToNotification"
+		            android:layout_width="wrap_content"
+		            android:layout_height="50dp"
+		            android:layout_gravity="right|center_vertical"
+		            android:layout_marginRight="15dp"
+		            android:gravity="center_vertical"
+		            android:text="1111"
+		            android:textColor="@color/blue"
+		            android:textSize="16sp" />
+
+		        <include
+		            android:layout_width="match_parent"
+		            android:layout_height="1dp"
+		            layout="@layout/include_interval_grey_15" />
+		    </LinearLayout>
+		    
+		</LinearLayout>
+    </ScrollView>
+</LinearLayout>
