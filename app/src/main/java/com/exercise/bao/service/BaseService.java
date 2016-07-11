@@ -6,7 +6,7 @@ import android.os.IBinder;
 import android.support.annotation.Nullable;
 
 /**
- * Created by Administrator on 2016/7/11.
+ * Created by CrazyBun on 2016/7/11.
  */
 public class BaseService extends Service{
 

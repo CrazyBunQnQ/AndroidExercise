@@ -5,7 +5,7 @@ import android.content.Context;
 import android.util.DisplayMetrics;
 
 /**
- * Created by Administrator on 2016/7/11.
+ * Created by CrazyBun on 2016/7/11.
  */
 public class DisplayUtil {
 
