@@ -65,7 +65,7 @@
 		            android:layout_centerVertical="true"
 		            android:layout_marginRight="13dp"
 		            android:contentDescription="@string/app_name"
-		            android:src="@drawable/btn_list_arrow" />
+		            android:src="@mipmap/btn_list_arrow" />
 
 		        <ImageView
 		            android:id="@+id/my_avatar"
@@ -74,7 +74,7 @@
 	                android:layout_centerVertical="true"
 	                android:layout_marginLeft="10dp"
 	                android:contentDescription="@string/app_name"
-	                android:src="@drawable/bg_user_0"/>
+	                android:src="@mipmap/bg_user_0"/>
 		        
 		        <ImageView
 		            android:id="@+id/user_state"
@@ -160,7 +160,7 @@
 		                android:layout_width="20sp"
 		                android:layout_height="20sp"
 		                android:contentDescription="@string/app_name"
-		                android:src="@drawable/bg_hall_order"/>
+		                android:src="@mipmap/bg_hall_order"/>
 		            
 		            <TextView 
 				        android:layout_width="wrap_content"
@@ -184,7 +184,7 @@
 		                android:layout_width="15sp"
 		                android:layout_height="15sp"
 		                android:contentDescription="@string/app_name"
-		                android:src="@drawable/btn_list_arrow"/>
+		                android:src="@mipmap/btn_list_arrow"/>
 		        </LinearLayout>
 		        <!-- <include
 			        android:layout_width="match_parent"
@@ -203,7 +203,7 @@
 		                android:layout_width="20sp"
 		                android:layout_height="20sp"
 		                android:contentDescription="@string/app_name"
-		                android:src="@drawable/bg_hall_exclusive"/>
+		                android:src="@mipmap/bg_hall_exclusive"/>
 		            
 		            <TextView 
 				        android:layout_width="wrap_content"
@@ -227,7 +227,7 @@
 		                android:layout_width="15sp"
 		                android:layout_height="15sp"
 		                android:contentDescription="@string/app_name"
-		                android:src="@drawable/btn_list_arrow"/>
+		                android:src="@mipmap/btn_list_arrow"/>
 		        </LinearLayout> -->
 		        <include
 			        android:layout_width="match_parent"
@@ -246,7 +246,7 @@
 		                android:layout_width="20sp"
 		                android:layout_height="20sp"
 		                android:contentDescription="@string/app_name"
-		                android:src="@drawable/bg_hall_print"/>
+		                android:src="@mipmap/bg_hall_print"/>
 		            <TextView 
 				        android:layout_width="wrap_content"
 				        android:layout_height="50dp"
@@ -269,7 +269,7 @@
 		                android:layout_width="15sp"
 		                android:layout_height="15sp"
 		                android:contentDescription="@string/app_name"
-		                android:src="@drawable/btn_list_arrow"/>
+		                android:src="@mipmap/btn_list_arrow"/>
 		        </LinearLayout>
 		        <include
 			        android:layout_width="match_parent"
@@ -288,7 +288,7 @@
 		                android:layout_width="20sp"
 		                android:layout_height="20sp"
 		                android:contentDescription="@string/app_name"
-		                android:src="@drawable/bg_hall_prize"/>
+		                android:src="@mipmap/bg_hall_prize"/>
 		            <TextView 
 				        android:layout_width="wrap_content"
 				        android:layout_height="50dp"
@@ -311,7 +311,7 @@
 		                android:layout_width="15sp"
 		                android:layout_height="15sp"
 		                android:contentDescription="@string/app_name"
-		                android:src="@drawable/btn_list_arrow"/>
+		                android:src="@mipmap/btn_list_arrow"/>
 		        </LinearLayout>
 		    </LinearLayout>
 		    
@@ -363,7 +363,7 @@
 		                android:layout_width="20sp"
 		                android:layout_height="20sp"
 		                android:contentDescription="@string/app_name"
-		                android:src="@drawable/bg_no_msg"/>
+		                android:src="@mipmap/bg_no_msg"/>
 		            
 		            <TextView 
 				        android:layout_width="match_parent"

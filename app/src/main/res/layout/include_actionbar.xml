@@ -20,7 +20,7 @@
             android:layout_width="10dp"
             android:layout_height="20dp"
             android:layout_marginLeft="0dp"
-            android:background="@drawable/btn_back" />
+            android:background="@mipmap/btn_back" />
     </LinearLayout>
 
     <TextView
@@ -72,7 +72,7 @@
             android:layout_marginRight="15dp"
             android:gravity="center"
             android:scaleType="centerInside"
-            android:src="@drawable/btn_upload_photo" />
+            android:src="@mipmap/btn_upload_photo" />
 
     </LinearLayout>
     
@@ -93,7 +93,7 @@
             android:layout_marginRight="15dp"
             android:gravity="center"
             android:scaleType="centerInside"
-            android:src="@drawable/btn_share" />
+            android:src="@mipmap/btn_share" />
 
     </LinearLayout>
     
